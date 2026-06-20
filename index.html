@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <!-- saved from url=(0065) -->
-<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,10 +34,21 @@
         }
 
         /* ===== COLOR VARIABLES (via common classes) ===== */
-        .color-primary { color: #1e3a5f; }
-        .color-secondary { color: #2c5282; }
-        .color-text { color: #666; }
-        .color-text-light { color: #555; }
+        .color-primary {
+            color: #1e3a5f;
+        }
+
+        .color-secondary {
+            color: #2c5282;
+        }
+
+        .color-text {
+            color: #666;
+        }
+
+        .color-text-light {
+            color: #555;
+        }
 
         /* ===== HEADER ===== */
         .header {
@@ -208,8 +222,13 @@
             top: 25px;
         }
 
-        .face-dot.left { left: 14px; }
-        .face-dot.right { right: 14px; }
+        .face-dot.left {
+            left: 14px;
+        }
+
+        .face-dot.right {
+            right: 14px;
+        }
 
         .smile {
             position: absolute;
@@ -301,7 +320,7 @@
             position: relative;
             height: 108px;
             border-radius: 36px;
-            overflow: hidden;
+            overflow: visible;
             box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
             filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.15));
             margin: 0 10px;
@@ -320,6 +339,29 @@
             z-index: 1;
             background: linear-gradient(180deg, #FDB913 33.3333%, #006A44 33.3333%, #006A44 66.6667%, #C1272D 66.6667%);
         }
+
+        .flag::after {
+            content: "";
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            bottom: -9px;
+            transform: rotate(45deg);
+            border-radius: 5px;
+        }
+
+
+        .flag-fr::after {
+            left: 16%;
+            background: #0055A4;
+        }
+
+
+        .flag-lt::after {
+            right: 18%;
+            background: #C1272D;
+        }
+
 
         /* Éléments droite */
         .document {
@@ -354,10 +396,21 @@
             border-radius: 1px;
         }
 
-        .doc-line:nth-child(2) { width: 80%; }
-        .doc-line:nth-child(3) { width: 90%; }
-        .doc-line:nth-child(4) { width: 70%; }
-        .doc-line:nth-child(5) { width: 60%; }
+        .doc-line:nth-child(2) {
+            width: 80%;
+        }
+
+        .doc-line:nth-child(3) {
+            width: 90%;
+        }
+
+        .doc-line:nth-child(4) {
+            width: 70%;
+        }
+
+        .doc-line:nth-child(5) {
+            width: 60%;
+        }
 
         .globe {
             position: absolute;
@@ -416,8 +469,15 @@
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-8px); }
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
         }
 
         /* ===== CONTENT SECTIONS ===== */
@@ -528,9 +588,17 @@
             margin-bottom: 20px;
         }
 
-        .icon-blue { background: linear-gradient(135deg, #e3f2fd, #bbdefb); }
-        .icon-orange { background: linear-gradient(135deg, #fff3e0, #ffe0b2); }
-        .icon-purple { background: linear-gradient(135deg, #f3e5f5, #e1bee7); }
+        .icon-blue {
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+        }
+
+        .icon-orange {
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+        }
+
+        .icon-purple {
+            background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+        }
 
         .service-title {
             font-size: 1.5rem;
@@ -761,13 +829,13 @@
                 padding: 30px 20px;
             }
 
-            #prestations > h2,
-            #parcours > h2 {
+            #prestations>h2,
+            #parcours>h2 {
                 font-size: 2rem;
                 margin-bottom: 30px;
             }
 
-            #prestations > h2 {
+            #prestations>h2 {
                 margin-bottom: 30px;
             }
 
@@ -833,15 +901,15 @@
             padding: 60px 40px;
         }
 
-        #prestations > h2,
-        #parcours > h2 {
+        #prestations>h2,
+        #parcours>h2 {
             text-align: center;
             font-size: 2.5rem;
             font-weight: 600;
             color: #1e3a5f;
         }
 
-        #prestations > h2 {
+        #prestations>h2 {
             margin-bottom: 50px;
         }
 
@@ -849,11 +917,11 @@
             padding: 60px;
         }
 
-        #parcours > h2 {
+        #parcours>h2 {
             margin-bottom: 40px;
         }
 
-        #tarifs > h2 {
+        #tarifs>h2 {
             text-align: center;
             font-size: 2rem;
             font-weight: 600;
@@ -976,7 +1044,7 @@
             margin-bottom: 8px;
         }
 
-        .footer-content > p {
+        .footer-content>p {
             margin-bottom: 6px;
             font-size: 0.7rem;
             opacity: 0.85;
@@ -1000,7 +1068,7 @@
         .footer-bottom {
             margin-top: 15px;
             padding-top: 12px;
-            border-top: 1px solid rgba(255,255,255,0.2);
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
             font-size: 0.75rem;
         }
 
@@ -1009,13 +1077,15 @@
         }
     </style>
 </head>
+
 <body>
-    
+
     <header class="header">
         <nav class="nav-container">
             <a href="#" class="logo" itemscope itemtype="http://data-vocabulary.org/Person">
                 <span class="logo-name" itemprop="name">Laima DEWITTE</span>
-                <span class="logo-title" itemprop="title">Traductrice et interprète assermentée fran&ccedil;ais lituanien</span>
+                <span class="logo-title" itemprop="title">Traductrice et interprète assermentée fran&ccedil;ais
+                    lituanien</span>
                 <span class="logo-contact">+33 6 18 92 11 65 • dewitte.traduction@gmail.com</span>
             </a>
             <ul class="nav-menu">
@@ -1045,7 +1115,6 @@
                 <div class="illustration">
                     <!-- Drapeaux gauche -->
                     <div class="flag flag-fr"></div>
-                    <div class="tampon"></div>
                     <div class="flag flag-lt"></div>
                 </div>
             </div>
@@ -1056,15 +1125,15 @@
     <main class="main-content">
         <section id="prestations">
             <h2>Prestations</h2>
-            
+
             <div class="services-grid-inline">
                 <div class="service-card">
                     <div class="service-icon icon-blue">📄</div>
                     <h3 class="service-title">Traduction</h3>
                     <p class="service-description text-justify">
-                        La traduction officielle certifiée (assermentée) confère une valeur officielle à vos documents 
-                        dans le cadre de procédures administratives, juridiques ou professionnelles. Chaque traduction 
-                        est réalisée avec rigueur terminologique et juridique. Elle est signée, datée et revêtue de mon 
+                        La traduction officielle certifiée (assermentée) confère une valeur officielle à vos documents
+                        dans le cadre de procédures administratives, juridiques ou professionnelles. Chaque traduction
+                        est réalisée avec rigueur terminologique et juridique. Elle est signée, datée et revêtue de mon
                         sceau afin de garantir son authenticité auprès des autorités françaises et étrangères.
                     </p>
                     <p class="service-subtitle">Exemples de documents traités</p>
@@ -1072,12 +1141,15 @@
                         <li itemprop="name" itemprop="description">Actes d'état civil (naissance, mariage, décès)</li>
                         <li itemprop="name" itemprop="description">Jugements, décisions et actes judiciaires</li>
                         <li itemprop="name" itemprop="description">Documents notariaux, procurations</li>
-                        <li itemprop="name" itemprop="description">Diplômes, attestations, certificats professionnels</li>
-                        <li itemprop="name" itemprop="description">Documents commerciaux ou techniques liés aux activités d'entreprise</li>
+                        <li itemprop="name" itemprop="description">Diplômes, attestations, certificats professionnels
+                        </li>
+                        <li itemprop="name" itemprop="description">Documents commerciaux ou techniques liés aux
+                            activités d'entreprise</li>
                         <li itemprop="name" itemprop="description">Comptes rendus et éléments de dossiers médicaux</li>
                     </ul>
                     <p class="service-note">
-                        La confidentialité est assurée à chaque étape et les traductions peuvent être transmises en version 
+                        La confidentialité est assurée à chaque étape et les traductions peuvent être transmises en
+                        version
                         papier ou numérique selon vos besoins.
                     </p>
                 </div>
@@ -1086,9 +1158,12 @@
                     <div class="service-icon icon-orange">💬</div>
                     <h3 class="service-title">Interprétation</h3>
                     <p class="service-description text-justify">
-                        L'interprétation assure une communication fluide et précise entre locuteurs français et lituaniens, 
-                        quel que soit le contexte. Chaque mission est préparée en amont afin de garantir une compréhension 
-                        optimale des enjeux, du lexique spécialisé et du cadre institutionnel ou professionnel dans lequel 
+                        L'interprétation assure une communication fluide et précise entre locuteurs français et
+                        lituaniens,
+                        quel que soit le contexte. Chaque mission est préparée en amont afin de garantir une
+                        compréhension
+                        optimale des enjeux, du lexique spécialisé et du cadre institutionnel ou professionnel dans
+                        lequel
                         elle s'inscrit.
                     </p>
                     <p class="service-subtitle-small">Modes d'intervention</p>
@@ -1151,36 +1226,43 @@
             <h2>Parcours</h2>
             <div class="content-wrapper">
                 <p class="intro-highlight">
-                    Entre la Lituanie et la France, mon parcours s'est construit autour des langues et de la transmission.
+                    Entre la Lituanie et la France, mon parcours s'est construit autour des langues et de la
+                    transmission.
                 </p>
                 <p class="intro-text intro-text-spaced">
-                    Bilingue français-lituanien, je mets cette expertise linguistique au service de la communication 
+                    Bilingue français-lituanien, je mets cette expertise linguistique au service de la communication
                     interculturelle pour offrir des prestations sur mesure et adaptées aux besoins de chacun.
                 </p>
                 <p class="intro-text intro-text-spaced">
-                    Après un diplôme en Philologie de la langue française obtenu à l'Université pédagogique de Vilnius, 
-                    en Lituanie, j'ai poursuivi mes études en France avec un Master en Didactique des langues à l'Université 
-                    d'Angers. 
+                    Après un diplôme en Philologie de la langue française obtenu à l'Université pédagogique de Vilnius,
+                    en Lituanie, j'ai poursuivi mes études en France avec un Master en Didactique des langues à
+                    l'Université
+                    d'Angers.
                 </p>
                 <p class="intro-text intro-text-spaced">
-                    Traductrice-interprète assermentée auprès de la Cour d'appel de Rennes depuis 2011, j'accompagne 
-                    juridictions, administrations, entreprises et particuliers dans leurs besoins de traduction certifiée 
+                    Traductrice-interprète assermentée auprès de la Cour d'appel de Rennes depuis 2011, j'accompagne
+                    juridictions, administrations, entreprises et particuliers dans leurs besoins de traduction
+                    certifiée
                     et d'interprétation professionnelle, avec rigueur, confidentialité et fidélité du sens.
                 </p>
                 <p class="intro-text intro-text-spaced">
-                    Mes domaines de spécialisation couvrent le juridique, l'administratif et le médical. J'interviens 
-                    régulièrement dans des contextes procéduraux complexes : audiences correctionnelles, gardes à vue, 
-                    interrogatoires, procédures d'immigration, démarches administratives, ainsi que dans les échanges 
-                    professionnels et commerciaux dans le secteur privé, nécessitant une communication fiable et immédiate.
+                    Mes domaines de spécialisation couvrent le juridique, l'administratif et le médical. J'interviens
+                    régulièrement dans des contextes procéduraux complexes : audiences correctionnelles, gardes à vue,
+                    interrogatoires, procédures d'immigration, démarches administratives, ainsi que dans les échanges
+                    professionnels et commerciaux dans le secteur privé, nécessitant une communication fiable et
+                    immédiate.
                 </p>
                 <p class="intro-text intro-text-spaced">
-                    Membre de l'UNETICA, union nationale des experts traducteurs-interprètes près les cours d'appel, 
-                    je respecte scrupuleusement les standards élevés de compétence et d'éthique de la profession. Je veille 
-                    à maintenir, enrichir et faire progresser mes compétences grâce à des formations continues, couvrant à 
+                    Membre de l'UNETICA, union nationale des experts traducteurs-interprètes près les cours d'appel,
+                    je respecte scrupuleusement les standards élevés de compétence et d'éthique de la profession. Je
+                    veille
+                    à maintenir, enrichir et faire progresser mes compétences grâce à des formations continues, couvrant
+                    à
                     la fois différents domaines spécialisés ainsi qu'en techniques de traduction et d'interprétariat.
                 </p>
                 <p class="intro-text intro-text-spaced">
-                    Basée à La Chapelle-sur-Erdre, j'interviens principalement en France, en Europe ainsi qu'en distanciel.
+                    Basée à La Chapelle-sur-Erdre, j'interviens principalement en France, en Europe ainsi qu'en
+                    distanciel.
                 </p>
             </div>
         </section>
@@ -1189,10 +1271,11 @@
             <h2>Tarifs</h2>
             <div class="content-wrapper">
                 <p class="tarifs-intro">
-                    Chaque prestation fait l'objet d'un devis personnalisé. Les tarifs sont établis de manière transparente, 
+                    Chaque prestation fait l'objet d'un devis personnalisé. Les tarifs sont établis de manière
+                    transparente,
                     en fonction de plusieurs critères.
                 </p>
-                
+
                 <div class="tarifs-section">
                     <h3>
                         Pour les traductions assermentées
@@ -1204,7 +1287,7 @@
                         <li>Version papier et/ou numérique, nombre d'exemplaires</li>
                     </ul>
                 </div>
-                
+
                 <div class="tarifs-section">
                     <h3>
                         Pour les prestations d'interprétation
@@ -1216,9 +1299,10 @@
                         <li>Contexte spécialisé nécessitant une expertise terminologique</li>
                     </ul>
                 </div>
-                
+
                 <p class="tarifs-note">
-                    L'objectif est de proposer une solution adaptée, professionnelle et proportionnée à la mission confiée, 
+                    L'objectif est de proposer une solution adaptée, professionnelle et proportionnée à la mission
+                    confiée,
                     tout en respectant les exigences déontologiques en vigueur.
                 </p>
             </div>
@@ -1234,17 +1318,19 @@
     <footer class="footer">
         <div class="footer-content">
             <h3>RGPD – Protection des données personnelles</h3>
-            
+
             <p>
-                Les informations recueillies sont traitées exclusivement pour répondre à vos demandes et assurer le suivi des prestations.
+                Les informations recueillies sont traitées exclusivement pour répondre à vos demandes et assurer le
+                suivi des prestations.
             </p>
-            
+
             <div class="footer-data">
-                <p>Vos données : collectées de manière minimale, conservées de manière sécurisée, jamais vendues ni communiquées à des tiers.</p>
+                <p>Vos données : collectées de manière minimale, conservées de manière sécurisée, jamais vendues ni
+                    communiquées à des tiers.</p>
                 <p>Vos droits : accès, rectification, effacement, limitation, opposition et portabilité.</p>
                 <p class="contact">Contact : dewitte.traduction@gmail.com</p>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>Laima DEWITTE - Traduction et Interprétation Français-Lituanien</p>
                 <p>Experte assermentée auprès de la Cour d'appel de Rennes</p>
@@ -1252,4 +1338,6 @@
         </div>
     </footer>
 
-</body></html>
+</body>
+
+</html>
