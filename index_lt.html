@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <!-- saved from url=(0065) -->
-<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +12,8 @@
     <link rel="alternate" href="http://www.vertimai.fr/index.html" hreflang="fr" />
     <link rel="alternate" href="http://www.vertimai.fr/index_lt.html" hreflang="lt" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Laima DEWITTE - Lietuvių – prancūzų kalbų vertėja raštu ir žodžiu, prisiekusi apeliaciniame teisme">
+    <meta name="description"
+        content="Laima DEWITTE - Lietuvių – prancūzų kalbų vertėja raštu ir žodžiu, prisiekusi apeliaciniame teisme">
     <meta name='Keywords'
         content='traducteur, traducteur, officiel, asserment&eacute;, lituanien, expert, judiciaire, nantes, rennes, acte de naissance, diplome,notice,auto-entrepreneur'>
     <meta name="author" content="Laima DEWITTE">
@@ -31,10 +35,21 @@
         }
 
         /* ===== COLOR VARIABLES (via common classes) ===== */
-        .color-primary { color: #1e3a5f; }
-        .color-secondary { color: #2c5282; }
-        .color-text { color: #666; }
-        .color-text-light { color: #555; }
+        .color-primary {
+            color: #1e3a5f;
+        }
+
+        .color-secondary {
+            color: #2c5282;
+        }
+
+        .color-text {
+            color: #666;
+        }
+
+        .color-text-light {
+            color: #555;
+        }
 
         /* ===== HEADER ===== */
         .header {
@@ -208,8 +223,13 @@
             top: 25px;
         }
 
-        .face-dot.left { left: 14px; }
-        .face-dot.right { right: 14px; }
+        .face-dot.left {
+            left: 14px;
+        }
+
+        .face-dot.right {
+            right: 14px;
+        }
 
         .smile {
             position: absolute;
@@ -301,7 +321,7 @@
             position: relative;
             height: 108px;
             border-radius: 36px;
-            overflow: hidden;
+            overflow: visible;
             box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
             filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.15));
             margin: 0 10px;
@@ -319,6 +339,28 @@
             margin-left: -32px;
             z-index: 1;
             background: linear-gradient(180deg, #FDB913 33.3333%, #006A44 33.3333%, #006A44 66.6667%, #C1272D 66.6667%);
+        }
+
+        .flag::after {
+            content: "";
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            bottom: -9px;
+            transform: rotate(45deg);
+            border-radius: 5px;
+        }
+
+
+        .flag-fr::after {
+            left: 16%;
+            background: #0055A4;
+        }
+
+
+        .flag-lt::after {
+            right: 18%;
+            background: #C1272D;
         }
 
 
@@ -356,10 +398,21 @@
             border-radius: 1px;
         }
 
-        .doc-line:nth-child(2) { width: 80%; }
-        .doc-line:nth-child(3) { width: 90%; }
-        .doc-line:nth-child(4) { width: 70%; }
-        .doc-line:nth-child(5) { width: 60%; }
+        .doc-line:nth-child(2) {
+            width: 80%;
+        }
+
+        .doc-line:nth-child(3) {
+            width: 90%;
+        }
+
+        .doc-line:nth-child(4) {
+            width: 70%;
+        }
+
+        .doc-line:nth-child(5) {
+            width: 60%;
+        }
 
         .globe {
             position: absolute;
@@ -418,8 +471,15 @@
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-8px); }
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
         }
 
         /* ===== CONTENT SECTIONS ===== */
@@ -530,9 +590,17 @@
             margin-bottom: 20px;
         }
 
-        .icon-blue { background: linear-gradient(135deg, #e3f2fd, #bbdefb); }
-        .icon-orange { background: linear-gradient(135deg, #fff3e0, #ffe0b2); }
-        .icon-purple { background: linear-gradient(135deg, #f3e5f5, #e1bee7); }
+        .icon-blue {
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+        }
+
+        .icon-orange {
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+        }
+
+        .icon-purple {
+            background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+        }
 
         .service-title {
             font-size: 1.5rem;
@@ -763,13 +831,13 @@
                 padding: 30px 20px;
             }
 
-            #prestations > h2,
-            #parcours > h2 {
+            #prestations>h2,
+            #parcours>h2 {
                 font-size: 2rem;
                 margin-bottom: 30px;
             }
 
-            #prestations > h2 {
+            #prestations>h2 {
                 margin-bottom: 30px;
             }
 
@@ -835,15 +903,15 @@
             padding: 60px 40px;
         }
 
-        #prestations > h2,
-        #parcours > h2 {
+        #prestations>h2,
+        #parcours>h2 {
             text-align: center;
             font-size: 2.5rem;
             font-weight: 600;
             color: #1e3a5f;
         }
 
-        #prestations > h2 {
+        #prestations>h2 {
             margin-bottom: 50px;
         }
 
@@ -851,11 +919,11 @@
             padding: 60px;
         }
 
-        #parcours > h2 {
+        #parcours>h2 {
             margin-bottom: 40px;
         }
 
-        #tarifs > h2 {
+        #tarifs>h2 {
             text-align: center;
             font-size: 2rem;
             font-weight: 600;
@@ -978,7 +1046,7 @@
             margin-bottom: 8px;
         }
 
-        .footer-content > p {
+        .footer-content>p {
             margin-bottom: 6px;
             font-size: 0.7rem;
             opacity: 0.85;
@@ -1002,7 +1070,7 @@
         .footer-bottom {
             margin-top: 15px;
             padding-top: 12px;
-            border-top: 1px solid rgba(255,255,255,0.2);
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
             font-size: 0.75rem;
         }
 
@@ -1011,13 +1079,15 @@
         }
     </style>
 </head>
+
 <body>
-    
+
     <header class="header">
         <nav class="nav-container">
             <a href="#" class="logo" itemscope itemtype="http://data-vocabulary.org/Person">
                 <span class="logo-name" itemprop="name">Laima DEWITTE</span>
-                <span class="logo-title" itemprop="title">Lietuvių – prancūzų kalbų vertėja raštu ir žodžiu, prisiekusi apeliaciniame teisme</span>
+                <span class="logo-title" itemprop="title">Lietuvių – prancūzų kalbų vertėja raštu ir žodžiu, prisiekusi
+                    apeliaciniame teisme</span>
                 <span class="logo-contact">+33 6 18 92 11 65 • dewitte.traduction@gmail.com</span>
             </a>
             <ul class="nav-menu">
@@ -1057,25 +1127,32 @@
     <main class="main-content">
         <section id="prestations">
             <h2>Paslaugos</h2>
-            
+
             <div class="services-grid-inline">
                 <div class="service-card">
                     <div class="service-icon icon-blue">📄</div>
                     <h3 class="service-title">Vertimas raštu</h3>
                     <p class="service-description text-justify">
-                        Oficialus patvirtintas (prisiekusio vertėjo) vertimas suteikia jūsų dokumentams oficialią galią administracinėse, teisinėse ar profesinėse procedūrose. Kiekvienas vertimas atliekamas laikantis terminologijos ir teisinio tikslumo. Jis yra pasirašytas, datuotas ir paženklintas mano antspaudu, siekiant garantuoti jo autentiškumą Prancūzijos ir užsienio institucijų atžvilgiu.
+                        Oficialus patvirtintas (prisiekusio vertėjo) vertimas suteikia jūsų dokumentams oficialią galią
+                        administracinėse, teisinėse ar profesinėse procedūrose. Kiekvienas vertimas atliekamas laikantis
+                        terminologijos ir teisinio tikslumo. Jis yra pasirašytas, datuotas ir paženklintas mano
+                        antspaudu, siekiant garantuoti jo autentiškumą Prancūzijos ir užsienio institucijų atžvilgiu.
                     </p>
                     <p class="service-subtitle">Vertimų pavyzdžiai</p>
                     <ul class="service-list" itemscope itemtype="http://schema.org/Product">
-                        <li itemprop="name" itemprop="description">Civilinės būklės aktai (gimimo, santuokos, mirties liudijimai)</li>
-                        <li itemprop="name" itemprop="description">Teismo sprendimai, nutartys ir kiti teismo dokumentai</li>
+                        <li itemprop="name" itemprop="description">Civilinės būklės aktai (gimimo, santuokos, mirties
+                            liudijimai)</li>
+                        <li itemprop="name" itemprop="description">Teismo sprendimai, nutartys ir kiti teismo dokumentai
+                        </li>
                         <li itemprop="name" itemprop="description">Notariniai dokumentai, įgaliojimai</li>
                         <li itemprop="name" itemprop="description">Diplomai, pažymos, profesiniai sertifikatai</li>
-                        <li itemprop="name" itemprop="description">Komerciniai ar techniniai dokumentai, susiję su įmonės veikla</li>
+                        <li itemprop="name" itemprop="description">Komerciniai ar techniniai dokumentai, susiję su
+                            įmonės veikla</li>
                         <li itemprop="name" itemprop="description">Medicininiai dokumentai</li>
                     </ul>
                     <p class="service-note">
-                        Konfidencialumas užtikrinamas kiekviename etape, o vertimai gali būti perduoti popieriniu arba skaitmeniniu formatu pagal jūsų poreikius.
+                        Konfidencialumas užtikrinamas kiekviename etape, o vertimai gali būti perduoti popieriniu arba
+                        skaitmeniniu formatu pagal jūsų poreikius.
                     </p>
                 </div>
 
@@ -1083,7 +1160,10 @@
                     <div class="service-icon icon-orange">💬</div>
                     <h3 class="service-title">Vertimas žodžiu</h3>
                     <p class="service-description text-justify">
-                        Vertimas žodžiu užtikrina sklandų ir tikslų bendravimą tarp prancūzų ir lietuvių kalbos vartotojų, nepriklausomai nuo konteksto. Kiekviena užduotis yra iš anksto parengiama, siekiant užtikrinti optimalų supratimą apie svarbius klausimus, specializuotą leksiką bei institucinę ar profesinę aplinką, kurioje ji vyksta.
+                        Vertimas žodžiu užtikrina sklandų ir tikslų bendravimą tarp prancūzų ir lietuvių kalbos
+                        vartotojų, nepriklausomai nuo konteksto. Kiekviena užduotis yra iš anksto parengiama, siekiant
+                        užtikrinti optimalų supratimą apie svarbius klausimus, specializuotą leksiką bei institucinę ar
+                        profesinę aplinką, kurioje ji vyksta.
                     </p>
                     <p class="service-subtitle-small">Vertimo būdai</p>
                     <ul class="service-list service-list-spaced">
@@ -1150,22 +1230,35 @@
                 <p class="intro-text intro-text-spaced">
                     Mano profesinė patirtis vystėsi kalbų ir žinių perdavimo srityse. </p>
                 <p class="intro-text intro-text-spaced">
-                   Kalbėdama dviem kalbomis – prancūzų ir lietuvių –, šią lingvistinę kompetenciją panaudoju tarpkultūrinei komunikacijai, kad galėčiau pasiūlyti individualias ir kiekvieno poreikiams pritaikytas paslaugas.
+                    Kalbėdama dviem kalbomis – prancūzų ir lietuvių –, šią lingvistinę kompetenciją panaudoju
+                    tarpkultūrinei komunikacijai, kad galėčiau pasiūlyti individualias ir kiekvieno poreikiams
+                    pritaikytas paslaugas.
                 </p>
                 <p class="intro-text intro-text-spaced">
-                    Baigusi Vilniaus pedagoginio universiteto Prancūzų filologijos studijas, tęsiau studijas Prancūzijoje ir įgijau kalbų didaktikos magistro laipsnį Anžė universitete.
+                    Baigusi Vilniaus pedagoginio universiteto Prancūzų filologijos studijas, tęsiau studijas
+                    Prancūzijoje ir įgijau kalbų didaktikos magistro laipsnį Anžė universitete.
                 </p>
                 <p class="intro-text intro-text-spaced">
-                    Nuo 2011 m. esu Reno apeliaciniame teisme prisiekusi vertėja raštu ir žodžiu, todėl teikiu teisminėms institucijoms, valdžios institucijoms, įmonėms ir privatiems asmenims sertifikuoto vertimo raštu ir žodžiu paslaugas, užtikrindama konfidencialumą bei turinio tikslumą.
+                    Nuo 2011 m. esu Reno apeliaciniame teisme prisiekusi vertėja raštu ir žodžiu, todėl teikiu
+                    teisminėms institucijoms, valdžios institucijoms, įmonėms ir privatiems asmenims sertifikuoto
+                    vertimo raštu ir žodžiu paslaugas, užtikrindama konfidencialumą bei turinio tikslumą.
                 </p>
                 <p class="intro-text intro-text-spaced">
-                    Mano specializacijos sritys apima teisę, administracinę veiklą ir mediciną. Reguliariai dirbu sudėtingose procesinėse situacijose: baudžiamosiose bylose, sulaikymo metu, apklausose, migracijos procedūrose, tvarkant administracinius formalumus, taip pat privačiame sektoriuje vykstančiuose profesiniuose ar komerciniuose susitarimuose, kuriuose reikalinga patikima ir operatyvi komunikacija.
+                    Mano specializacijos sritys apima teisę, administracinę veiklą ir mediciną. Reguliariai dirbu
+                    sudėtingose procesinėse situacijose: baudžiamosiose bylose, sulaikymo metu, apklausose, migracijos
+                    procedūrose, tvarkant administracinius formalumus, taip pat privačiame sektoriuje vykstančiuose
+                    profesiniuose ar komerciniuose susitarimuose, kuriuose reikalinga patikima ir operatyvi
+                    komunikacija.
                 </p>
                 <p class="intro-text intro-text-spaced">
-                    Esu UNETICA, nacionalinės apeliacinių teismų ekspertų vertėjų žodžiu ir raštu sąjungos, narė, todėl griežtai laikausi aukštų profesinės kompetencijos ir etikos standartų. Stengiuosi išlaikyti, praturtinti bei tobulinti profesinius įgūdžius, nuolat dalyvaujant tęstiniuose mokymuose, apimančiuose tiek įvairias specializuotas sritis, tiek vertimo raštu ir žodžiu technikas.
+                    Esu UNETICA, nacionalinės apeliacinių teismų ekspertų vertėjų žodžiu ir raštu sąjungos, narė, todėl
+                    griežtai laikausi aukštų profesinės kompetencijos ir etikos standartų. Stengiuosi išlaikyti,
+                    praturtinti bei tobulinti profesinius įgūdžius, nuolat dalyvaujant tęstiniuose mokymuose,
+                    apimančiuose tiek įvairias specializuotas sritis, tiek vertimo raštu ir žodžiu technikas.
                 </p>
                 <p class="intro-text intro-text-spaced">
-                    Gyvenu La Chapelle-sur-Erdre, dirbu daugiausia Prancūzijoje, taip pat Lietuvoje, tiesioginiu arba nuotoliniu būdu.
+                    Gyvenu La Chapelle-sur-Erdre, dirbu daugiausia Prancūzijoje, taip pat Lietuvoje, tiesioginiu arba
+                    nuotoliniu būdu.
                 </p>
             </div>
         </section>
@@ -1174,9 +1267,10 @@
             <h2>Kainos</h2>
             <div class="content-wrapper">
                 <p class="tarifs-intro">
-                    Kiekviena paslauga įkainojama individualiai. Kainos nustatomos atsižvelgiant į skirtingus kriterijus ir visada suderinama iš anksto.
+                    Kiekviena paslauga įkainojama individualiai. Kainos nustatomos atsižvelgiant į skirtingus kriterijus
+                    ir visada suderinama iš anksto.
                 </p>
-                
+
                 <div class="tarifs-section">
                     <h3>
                         Vertimo raštu paslaugų kriterijai:
@@ -1188,7 +1282,7 @@
                         <li>Popierinė ir (arba) skaitmeninė versija, kopijų skaičius</li>
                     </ul>
                 </div>
-                
+
                 <div class="tarifs-section">
                     <h3>
                         Vertimo žodžiu paslaugų kriterijai:
@@ -1200,9 +1294,10 @@
                         <li>Specializuota sritis, reikalaujanti atitinkamos terminologinės kompetencijos</li>
                     </ul>
                 </div>
-                
+
                 <p class="tarifs-note">
-                    Tikslas – kiekvienam klientui pasiūlyti sprendimą, kuris geriausiai atitiktų jų poreikius, laikantis profesinės etikos reikalavimų.
+                    Tikslas – kiekvienam klientui pasiūlyti sprendimą, kuris geriausiai atitiktų jų poreikius, laikantis
+                    profesinės etikos reikalavimų.
                 </p>
             </div>
         </section>
@@ -1217,23 +1312,26 @@
     <footer class="footer">
         <div class="footer-content">
             <h3>BDAR – Asmens duomenų apsauga</h3>
-            
+
             <p>
-                Surinkta informacija naudojama tik jūsų užklausoms atsakyti ir paslaugų vykdymui. 
+                Surinkta informacija naudojama tik jūsų užklausoms atsakyti ir paslaugų vykdymui.
             </p>
-            
+
             <div class="footer-data">
-                <p>Jūsų duomenys: renkami tik tiek, kiek būtina, saugomi saugiai, niekada neparduodami ir neperduodami tretiesiems asmenims.</p>
+                <p>Jūsų duomenys: renkami tik tiek, kiek būtina, saugomi saugiai, niekada neparduodami ir neperduodami
+                    tretiesiems asmenims.</p>
                 <p>Jūsų teisės: teisė susipažinti, ištaisyti, ištrinti, apriboti, nesutikti ir perkelti duomenis.</p>
                 <p class="contact">Kontaktas: dewitte.traduction@gmail.com</p>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>Laima DEWITTE - Vertimas raštu ir žodžiu prancūzų / lietuvių kalbomis</p>
                 <p>Reno apeliaciniame teisme prisiekusi vertėja</p>
             </div>
         </div>
     </footer>
-    
 
-</body></html>
+
+</body>
+
+</html>
