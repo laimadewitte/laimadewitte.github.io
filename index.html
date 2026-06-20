@@ -298,38 +298,27 @@
 
         /* Drapeaux gauche */
         .flag {
-            /*position: absolute;*/
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
-            animation: float 3s ease-in-out infinite;
+            position: relative;
+            height: 108px;
+            border-radius: 36px;
+            overflow: hidden;
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+            filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.15));
+            margin: 0 10px;
         }
 
         .flag-fr {
-            /*top: 120px;
-            left: 40px;*/
-            background: linear-gradient(90deg, #0055A4 33.33%, #FFFFFF 33.33%, #FFFFFF 66.66%, #EF4135 66.66%);
+            width: 162px;
+            top: -10%;
+            background: linear-gradient(90deg, #0055A4 33.3333%, #FFFFFF 33.3333%, #FFFFFF 66.6667%, #EF4135 66.6667%);
         }
 
         .flag-lt {
-            /*top: 120px;
-            left: 280px;*/
-            background: linear-gradient(180deg, #FDB913 33.33%, #006A44 33.33%, #006A44 66.66%, #C1272D 66.66%);
-            animation-delay: 0.4s;
-        }
-
-        .tampon {
-            /*position: absolute;*/
-            width: 160px;
-            height: 160px;
-            /* box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15); */
-            top: 80px;
-            left: 120px;
-            background-image: url(./tampon-bg.png);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            width: 180px;
+            top: 10%;
+            margin-left: -32px;
+            z-index: 1;
+            background: linear-gradient(180deg, #FDB913 33.3333%, #006A44 33.3333%, #006A44 66.6667%, #C1272D 66.6667%);
         }
 
         /* Éléments droite */
