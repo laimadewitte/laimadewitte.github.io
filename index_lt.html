@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="fr">
-
-<head>
+<!-- saved from url=(0065) -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,165 +9,1238 @@
     <link rel="alternate" href="http://www.vertimai.fr/index.html" hreflang="fr" />
     <link rel="alternate" href="http://www.vertimai.fr/index_lt.html" hreflang="lt" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Traducteur asserment&eacute; lituanien">
+    <meta name="description" content="Laima DEWITTE - Lietuvių – prancūzų kalbų vertėja raštu ir žodžiu, prisiekusi apeliaciniame teisme">
     <meta name='Keywords'
         content='traducteur, traducteur, officiel, asserment&eacute;, lituanien, expert, judiciaire, nantes, rennes, acte de naissance, diplome,notice,auto-entrepreneur'>
     <meta name="author" content="Laima DEWITTE">
-    <title>Laima DEWITTE - lietuvių – prancūzų kalbų vertėja</title>
+    <title>Laima DEWITTE - Lietuvių – prancūzų kalbų vertėja raštu ir žodžiu, prisiekusi apeliaciniame teisme</title>
+
     <style>
+        /* ===== RESET & BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: #ffffff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* ===== COLOR VARIABLES (via common classes) ===== */
+        .color-primary { color: #1e3a5f; }
+        .color-secondary { color: #2c5282; }
+        .color-text { color: #666; }
+        .color-text-light { color: #555; }
+
+        /* ===== HEADER ===== */
+        .header {
             background: white;
-            color: #150303;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
-        .box a {
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .logo {
             text-decoration: none;
-            color: #150303;
+            line-height: 1.4;
         }
 
-        .header,
-        .footer {
-
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-
-
-        .box {
-            display: flex;
-            flex-direction: column;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .flags {
-            max-width: 225px;
-            display: flex;
-            flex-direction: row;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 20px 20px 20px 20px;
-        }
-
-        .row {
-            border-bottom: 2px solid #e5e5e5;
-            font-family: 'Helvetica Neue', Helvetica, Arial, serif;
-            font-size: 140%;
-            padding: 20px 20px 20px 20px;
-            position: relative;
-
-        }
-
-        .start h1 {
+        .logo-name {
+            display: block;
+            font-size: 1.6rem;
             font-weight: 700;
-            font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+            color: #1e3a5f;
         }
 
-        .start h2 {
-            font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+        .logo-title {
+            display: block;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #555;
         }
 
-        /* Custom page footer */
-        .footer {
-            padding-top: 10px;
-            padding-bottom: 15px;
-            text-align: center;
+        .logo-contact {
+            display: block;
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-link {
             text-decoration: none;
-            color: #150303;
+            color: #555;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s;
         }
 
-        /* Customize container */
-        @media (min-width: 768px) {
-            .container {
-                max-width: 930px;
-            }
+        .nav-link:hover {
+            color: #2c5282;
         }
 
-        .c-flag__fra {
-            width: 110px;
-            height: 66px;
-            background-image: -webkit-linear-gradient(left, #002395 0, #002395 33%, #FFF 33%, #FFF 67%, #ED2939 67%, #ED2939 100%);
-            background-image: linear-gradient(90deg, #002395 0, #002395 33%, #FFF 33%, #FFF 67%, #ED2939 67%, #ED2939 100%);
+        /* ===== HERO ===== */
+        .hero-banner {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 50%, #3d6a99 100%);
         }
 
-        .c-flag__ltu {
-            width: 110px;
-            height: 66px;
-            background-image: -webkit-linear-gradient(top, #fdb913 0, #fdb913 33%, #006a44 33%, #006a44 67%, #c1272d 67%, #c1272d 100%);
-            background-image: linear-gradient(180deg, #fdb913 0, #fdb913 33%, #006a44 33%, #006a44 67%, #c1272d 67%, #c1272d 100%);
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 200px;
         }
 
-        .c-flag {
+        .text-section {
+            color: white;
+            padding: 40px;
+        }
+
+        .hero-title {
+            font-size: 2.4rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.15rem;
+            font-weight: 300;
+            opacity: 0.95;
+            margin-bottom: 25px;
+        }
+
+        .hero-languages {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 12px 24px;
+            border-radius: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .language {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .arrow {
+            opacity: 0.7;
+        }
+
+        /* ===== ILLUSTRATION ===== */
+        .visual-section {
+            position: relative;
+            height: 320px;
+        }
+
+        .illustration {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Personnage */
+        .character {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 160px;
+        }
+
+        .person {
+            position: relative;
+            width: 100px;
+            margin: 0 auto;
+        }
+
+        .head {
+            width: 50px;
+            height: 60px;
+            background: #ffd4b8;
+            border-radius: 25px 25px 20px 20px;
+            margin: 0 auto 3px;
+            position: relative;
+        }
+
+        .hair {
+            position: absolute;
+            width: 60px;
+            height: 45px;
+            background: #1e3a5f;
+            border-radius: 50% 50% 0 0;
+            top: -3px;
+            left: -5px;
+        }
+
+        .face-dot {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: #333;
+            border-radius: 50%;
+            top: 25px;
+        }
+
+        .face-dot.left { left: 14px; }
+        .face-dot.right { right: 14px; }
+
+        .smile {
+            position: absolute;
+            width: 16px;
+            height: 8px;
+            border: 2px solid #333;
+            border-top: none;
+            border-radius: 0 0 16px 16px;
+            bottom: 12px;
+            left: 17px;
+        }
+
+        .body {
+            width: 70px;
+            height: 50px;
+            background: #ff8a80;
+            border-radius: 12px 12px 3px 3px;
             margin: 0 auto;
             position: relative;
         }
 
-        .lang {
-            right: 20px;
+        .arm {
             position: absolute;
+            width: 28px;
+            height: 10px;
+            background: #ff8a80;
+            border-radius: 5px;
+            top: 12px;
+        }
+
+        .arm.left {
+            left: -22px;
+            transform: rotate(-10deg);
+        }
+
+        .arm.right {
+            right: -22px;
+            transform: rotate(10deg);
+        }
+
+        .laptop {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+        }
+
+        .laptop-screen {
+            width: 100%;
+            height: 60px;
+            background: #1e3a5f;
+            border: 3px solid #2c5282;
+            border-radius: 3px;
+        }
+
+        .laptop-base {
+            width: 110%;
+            height: 6px;
+            background: #2c5282;
+            margin: -2px auto 0;
+        }
+
+        .desk {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 8px;
+            background: #2c5282;
+        }
+
+        /* ===== DECORATIVE ELEMENTS ===== */
+        /* Common floating animation */
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        /* Common shadow */
+        .shadow-soft {
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .shadow-card {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Drapeaux gauche */
+        .flag {
+            /*position: absolute;*/
+            width: 96px;
+            height: 96px;
+            border-radius: 6px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .flag-fr {
+            /*top: 120px;
+            left: 40px;*/
+            background: linear-gradient(90deg, #0055A4 33.33%, #FFFFFF 33.33%, #FFFFFF 66.66%, #EF4135 66.66%);
+        }
+
+        .flag-lt {
+            /*top: 120px;
+            left: 280px;*/
+            background: linear-gradient(180deg, #FDB913 33.33%, #006A44 33.33%, #006A44 66.66%, #C1272D 66.66%);
+        }
+
+        .tampon {
+            /*position: absolute;*/
+            width: 160px;
+            height: 160px;
+            /* box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15); */
+            top: 80px;
+            left: 120px;
+            background-image: url(./tampon-bg.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Éléments droite */
+        .document {
+            position: absolute;
+            top: 40px;
+            right: 80px;
+            width: 45px;
+            height: 55px;
+            background: white;
+            border-radius: 6px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+            padding: 8px;
+            animation: float 3s ease-in-out infinite;
+            animation-delay: 0.3s;
+        }
+
+        .doc-corner {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 12px 12px 0;
+            border-color: transparent #e0e0e0 transparent transparent;
+        }
+
+        .doc-line {
+            height: 2px;
+            background: #3498db;
+            margin-bottom: 5px;
+            border-radius: 1px;
+        }
+
+        .doc-line:nth-child(2) { width: 80%; }
+        .doc-line:nth-child(3) { width: 90%; }
+        .doc-line:nth-child(4) { width: 70%; }
+        .doc-line:nth-child(5) { width: 60%; }
+
+        .globe {
+            position: absolute;
+            top: 110px;
+            right: 35px;
+            width: 50px;
+            height: 50px;
+            background: #64B5F6;
+            border-radius: 50%;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+            animation: float 3s ease-in-out infinite;
+            animation-delay: 0.2s;
+            overflow: hidden;
+        }
+
+        .globe::before {
+            content: '';
+            position: absolute;
+            width: 55%;
+            height: 55%;
+            background: #81C784;
+            border-radius: 50% 0 50% 50%;
+            top: 12%;
+            left: 15%;
+        }
+
+        .chat-bubble {
+            position: absolute;
+            background: #FFD54F;
+            padding: 10px 14px;
+            border-radius: 18px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+            display: flex;
+            gap: 6px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .chat-bubble-1 {
+            top: 190px;
+            right: 70px;
+            animation-delay: 0.1s;
+        }
+
+        .chat-bubble-2 {
+            top: 225px;
+            right: 30px;
+            background: #FF8A80;
+            animation-delay: 0.5s;
+        }
+
+        .chat-dot {
+            width: 5px;
+            height: 5px;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 50%;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        /* ===== CONTENT SECTIONS ===== */
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 40px;
+        }
+
+        /* Common section wrapper */
+        .section-wrapper {
+            max-width: 1200px;
+            margin: 0 auto 40px;
+            padding: 60px 40px;
+            background: #f8f9fa;
+            border-radius: 16px;
+        }
+
+        .section-wrapper-full {
+            padding: 60px;
+        }
+
+        /* Common section heading */
+        .section-heading {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #1e3a5f;
+            margin-bottom: 40px;
+        }
+
+        .section-heading-large {
+            margin-bottom: 50px;
+        }
+
+        .section-heading-medium {
+            font-size: 2rem;
+        }
+
+        .content-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .intro-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .intro-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #1e3a5f;
+            margin-bottom: 20px;
+        }
+
+        .intro-text {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .intro-text-spaced {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .intro-highlight {
+            font-size: 1.15rem;
+            color: #1e3a5f;
+            font-weight: 600;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        /* ===== SERVICE CARDS ===== */
+        .service-card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .icon-blue { background: linear-gradient(135deg, #e3f2fd, #bbdefb); }
+        .icon-orange { background: linear-gradient(135deg, #fff3e0, #ffe0b2); }
+        .icon-purple { background: linear-gradient(135deg, #f3e5f5, #e1bee7); }
+
+        .service-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1e3a5f;
+            margin-bottom: 15px;
+        }
+
+        .service-description {
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .text-justify {
+            text-align: justify;
+        }
+
+        .service-list {
+            list-style: none;
+        }
+
+        .service-list li {
+            color: #555;
+            padding: 8px 0 8px 25px;
+            position: relative;
+        }
+
+        .service-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #2c5282;
+            font-weight: bold;
+        }
+
+        .service-list-spaced {
+            margin-bottom: 12px;
+        }
+
+        /* Service text styles */
+        .service-subtitle,
+        .service-subtitle-small {
+            font-weight: 600;
+            color: #1e3a5f;
+        }
+
+        .service-subtitle {
+            margin-bottom: 10px;
+        }
+
+        .service-subtitle-small {
+            margin-bottom: 8px;
+        }
+
+        .service-note,
+        .service-note-small {
+            font-size: 0.95rem;
+            color: #666;
+            font-style: italic;
+            text-align: justify;
+        }
+
+        .service-note {
+            margin-top: 15px;
+        }
+
+        .service-note-small {
+            margin-top: 12px;
+        }
+
+        /* ===== ABOUT SECTION ===== */
+        .about-section {
+            background: #f8f9fa;
+            border-radius: 16px;
+            padding: 60px;
+            margin-bottom: 40px;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .about-text h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #1e3a5f;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .credentials {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .credential-item {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .credential-title {
+            font-weight: 600;
+            color: #1e3a5f;
+            margin-bottom: 5px;
+        }
+
+        .credential-desc {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* ===== CTA SECTION ===== */
+        .cta-section {
+            text-align: center;
+            padding: 60px 40px;
+            background: linear-gradient(135deg, #1e3a5f, #2c5282);
+            border-radius: 16px;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .cta-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .cta-text {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #1e3a5f;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: #1e3a5f;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .footer p {
+            opacity: 0.8;
+            margin-bottom: 10px;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 968px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 15px;
+                padding: 15px 20px;
+            }
+
+            .nav-menu {
+                gap: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .text-section {
+                text-align: center;
+            }
+
+            .visual-section {
+                height: 280px;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            /* Stack service cards vertically */
+            .services-grid-inline {
+                display: grid;
+                grid-template-columns: 1fr !important;
+                gap: 20px;
+                margin-bottom: 20px;
+            }
+
+            /* Reduce section padding and margins */
+            .main-content {
+                padding: 20px 20px;
+            }
+
+            #prestations,
+            #parcours {
+                margin: 0 auto 20px;
+                padding: 30px 20px;
+            }
+
+            #parcours {
+                padding: 30px 20px;
+            }
+
+            #prestations > h2,
+            #parcours > h2 {
+                font-size: 2rem;
+                margin-bottom: 30px;
+            }
+
+            #prestations > h2 {
+                margin-bottom: 30px;
+            }
+
+            .service-card {
+                padding: 25px 20px;
+            }
+
+            /* Fix quality box for mobile - stack vertically */
+            .quality-box {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .quality-icon-wrapper {
+                align-self: center;
+            }
+
+            .quality-text-wrapper {
+                width: 100%;
+            }
+
+            .quality-text-wrapper h3 {
+                text-align: center;
+            }
+
+            .quality-list-wrapper {
+                width: 100%;
+            }
+
+            /* Reduce other margins and padding */
+            .about-section {
+                padding: 30px 20px;
+                margin-bottom: 20px;
+            }
+
+            .cta-section {
+                padding: 40px 20px;
+                margin-bottom: 20px;
+            }
+
+            .footer {
+                padding: 30px 20px;
+            }
+
+            .content-wrapper {
+                padding: 0 10px;
+            }
+        }
+
+        /* ===== SPECIFIC SECTIONS ===== */
+        /* Common section styles */
+        #prestations,
+        #parcours {
+            max-width: 1200px;
+            margin: 0 auto 40px;
+            background: #f8f9fa;
+            border-radius: 16px;
+        }
+
+        #prestations {
+            padding: 60px 40px;
+        }
+
+        #prestations > h2,
+        #parcours > h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #1e3a5f;
+        }
+
+        #prestations > h2 {
+            margin-bottom: 50px;
+        }
+
+        #parcours {
+            padding: 60px;
+        }
+
+        #parcours > h2 {
+            margin-bottom: 40px;
+        }
+
+        #tarifs > h2 {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 600;
+            color: #1e3a5f;
+            margin-bottom: 40px;
+        }
+
+        .services-grid-inline {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        /* ===== QUALITY BOX ===== */
+        .quality-box {
+            background: white;
+            border-radius: 12px;
+            padding: 20px 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .quality-icon-wrapper {
+            flex-shrink: 0;
+        }
+
+        .quality-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #e3f2fd, #90caf9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #2196f3;
+        }
+
+        .quality-icon span {
+            font-size: 2.5rem;
+            color: #1976d2;
+        }
+
+        .quality-text-wrapper {
+            flex: 1;
+        }
+
+        .quality-text-wrapper h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1e3a5f;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .quality-list-wrapper {
+            flex: 1.2;
+        }
+
+        .quality-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .quality-list li {
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .quality-list li span {
+            position: absolute;
+            left: 0;
+            color: #2c5282;
+        }
+
+        /* ===== TARIFS SECTION ===== */
+        .tarifs-intro,
+        .tarifs-list,
+        .tarifs-note {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .tarifs-intro {
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+            text-align: justify;
+        }
+
+        .tarifs-section {
+            margin-bottom: 30px;
+        }
+
+        .tarifs-section h3 {
+            color: #1e3a5f;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .tarifs-list {
+            padding-left: 20px;
+            text-align: justify;
+        }
+
+        .tarifs-note {
+            font-style: italic;
+            text-align: justify;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer-content h3 {
+            font-size: 0.8rem;
+            margin-bottom: 8px;
+        }
+
+        .footer-content > p {
+            margin-bottom: 6px;
+            font-size: 0.7rem;
+            opacity: 0.85;
+        }
+
+        .footer-data {
+            font-size: 0.65rem;
+            opacity: 0.8;
+            margin-bottom: 8px;
+        }
+
+        .footer-data p {
+            margin-bottom: 4px;
+        }
+
+        .footer-data p.contact {
+            font-style: italic;
+            font-size: 0.6rem;
+        }
+
+        .footer-bottom {
+            margin-top: 15px;
+            padding-top: 12px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            font-size: 0.75rem;
+        }
+
+        .footer-bottom p:last-child {
+            margin-top: 8px;
         }
     </style>
 </head>
-
 <body>
-    <div class="lang"><a href="index_lt.html">Lietuviskai</a> <a href="index.html">Français</a></div>
-    <div class="box">
-        <div class="row">
+    
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo" itemscope itemtype="http://data-vocabulary.org/Person">
+                <span class="logo-name" itemprop="name">Laima DEWITTE</span>
+                <span class="logo-title" itemprop="title">Lietuvių – prancūzų kalbų vertėja raštu ir žodžiu, prisiekusi apeliaciniame teisme</span>
+                <span class="logo-contact">+33 6 18 92 11 65 • dewitte.traduction@gmail.com</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#accueil" class="nav-link">Pagrindinis</a></li>
+                <li><a href="#prestations" class="nav-link">Paslaugos</a></li>
+                <li><a href="#parcours" class="nav-link">Karjera</a></li>
+                <li><a href="#tarifs" class="nav-link">Kainos</a></li>
+                <li><a href="#contact" class="nav-link">Kontaktai</a></li>
+            </ul>
+            <div class="lang"><a href="index_lt.html">Lietuviskai</a> <a href="index.html">Français</a></div>
+        </nav>
+    </header>
 
-            <div class="start" itemscope itemtype="http://data-vocabulary.org/Person">
-                <h1>
-                     <span itemprop="name">Laima DEWITTE</span>
-                </h1>
-                <h2><span itemprop="title">Rennes miesto apeliaciniam teismui prisiekusi lietuvių – prancūzų kalbų vertėja.</a>.</h2>
-
+    <section class="hero-banner" id="accueil">
+        <div class="hero-content">
+            <div class="text-section">
+                <h1 class="hero-title">Vertimas raštu ir žodžiu</h1>
+                <p class="hero-subtitle">Reno apeliaciniame teisme prisiekusi vertėja</p>
+                <div class="hero-languages">
+                    <span class="language">Prancūzų</span>
+                    <span class="arrow">⟷</span>
+                    <span class="language">lietuvių kalbos</span>
+                </div>
             </div>
 
-
-            <div class="flags" style="text-align:right;">
-                <a href="index_lt.html">
-                    <div class="c-flag c-flag__ltu"></div>
-                </a>&nbsp;
-                <a href="index.html">
-                    <div class="c-flag c-flag__fra"></div>
-                </a>
+            <div class="visual-section">
+                <div class="illustration">
+                    <!-- Drapeaux gauche -->
+                    <div class="flag flag-fr"></div>
+                    <div class="flag flag-lt"></div>
+                </div>
             </div>
-
         </div>
+    </section>
 
 
+    <main class="main-content">
+        <section id="prestations">
+            <h2>Paslaugos</h2>
+            
+            <div class="services-grid-inline">
+                <div class="service-card">
+                    <div class="service-icon icon-blue">📄</div>
+                    <h3 class="service-title">Vertimas raštu</h3>
+                    <p class="service-description text-justify">
+                        Oficialus patvirtintas (prisiekusio vertėjo) vertimas suteikia jūsų dokumentams oficialią galią administracinėse, teisinėse ar profesinėse procedūrose. Kiekvienas vertimas atliekamas laikantis terminologijos ir teisinio tikslumo. Jis yra pasirašytas, datuotas ir paženklintas mano antspaudu, siekiant garantuoti jo autentiškumą Prancūzijos ir užsienio institucijų atžvilgiu.
+                    </p>
+                    <p class="service-subtitle">Vertimų pavyzdžiai</p>
+                    <ul class="service-list" itemscope itemtype="http://schema.org/Product">
+                        <li itemprop="name" itemprop="description">Civilinės būklės aktai (gimimo, santuokos, mirties liudijimai)</li>
+                        <li itemprop="name" itemprop="description">Teismo sprendimai, nutartys ir kiti teismo dokumentai</li>
+                        <li itemprop="name" itemprop="description">Notariniai dokumentai, įgaliojimai</li>
+                        <li itemprop="name" itemprop="description">Diplomai, pažymos, profesiniai sertifikatai</li>
+                        <li itemprop="name" itemprop="description">Komerciniai ar techniniai dokumentai, susiję su įmonės veikla</li>
+                        <li itemprop="name" itemprop="description">Medicininiai dokumentai</li>
+                    </ul>
+                    <p class="service-note">
+                        Konfidencialumas užtikrinamas kiekviename etape, o vertimai gali būti perduoti popieriniu arba skaitmeniniu formatu pagal jūsų poreikius.
+                    </p>
+                </div>
 
-        <div class="row" itemscope itemtype="http://schema.org/Product">
+                <div class="service-card">
+                    <div class="service-icon icon-orange">💬</div>
+                    <h3 class="service-title">Vertimas žodžiu</h3>
+                    <p class="service-description text-justify">
+                        Vertimas žodžiu užtikrina sklandų ir tikslų bendravimą tarp prancūzų ir lietuvių kalbos vartotojų, nepriklausomai nuo konteksto. Kiekviena užduotis yra iš anksto parengiama, siekiant užtikrinti optimalų supratimą apie svarbius klausimus, specializuotą leksiką bei institucinę ar profesinę aplinką, kurioje ji vyksta.
+                    </p>
+                    <p class="service-subtitle-small">Vertimo būdai</p>
+                    <ul class="service-list service-list-spaced">
+                        <li><strong>Sinchroninis:</strong> tiesioginis vertimas atsiliekant keletą sekundžių</li>
+                        <li><strong>Nuoseklus:</strong> pasitelkiant užrašus, tikslus kalbos atkartojimas</li>
+                        <li><strong>Tarpininkavimo:</strong> lankstus neformalus vertimo žodžiu būdas</li>
+                    </ul>
+                    <p class="service-subtitle-small">Veiklos sritys</p>
+                    <ul class="service-list">
+                        <li>Teisminės procedūros ir ekspertizės</li>
+                        <li>Institucijos ir administracijos</li>
+                        <li>Verslo susitikimai ir derybos</li>
+                    </ul>
+                    <p class="service-note-small">
+                        Vertimas gali būti atliekamas tiesiogiai arba nuotoliniu būdu.
+                    </p>
+                </div>
+            </div>
+
+            <div class="quality-box">
+                <div class="quality-icon-wrapper">
+                    <div class="quality-icon">
+                        <span>✓</span>
+                    </div>
+                </div>
+                <div class="quality-text-wrapper">
+                    <h3>
+                        Mano teikiamų paslaugų kokybę apibūdina:
+                    </h3>
+                </div>
+                <div class="quality-list-wrapper">
+                    <ul class="quality-list">
+                        <li>
+                            <span>•</span>
+                            Teksto prasmės ir niuansų tikslumas
+                        </li>
+                        <li>
+                            <span>•</span>
+                            Reguliarūs tęstiniai mokymai
+                        </li>
+                        <li>
+                            <span>•</span>
+                            Sutartų terminų laikymasis
+                        </li>
+                        <li>
+                            <span>•</span>
+                            Konfidencialumas
+                        </li>
+                        <li>
+                            <span>•</span>
+                            Vertimo paslaugos pritaikytos pagal jūsų poreikius
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="parcours">
+            <h2>Karjera</h2>
+            <div class="content-wrapper">
+                <p class="intro-highlight">
+                    Tarp Lietuvos ir Prancūzijos
+                </p>
+                <p class="intro-text intro-text-spaced">
+                    Mano profesinė patirtis vystėsi kalbų ir žinių perdavimo srityse. </p>
+                <p class="intro-text intro-text-spaced">
+                   Kalbėdama dviem kalbomis – prancūzų ir lietuvių –, šią lingvistinę kompetenciją panaudoju tarpkultūrinei komunikacijai, kad galėčiau pasiūlyti individualias ir kiekvieno poreikiams pritaikytas paslaugas.
+                </p>
+                <p class="intro-text intro-text-spaced">
+                    Baigusi Vilniaus pedagoginio universiteto Prancūzų filologijos studijas, tęsiau studijas Prancūzijoje ir įgijau kalbų didaktikos magistro laipsnį Anžė universitete.
+                </p>
+                <p class="intro-text intro-text-spaced">
+                    Nuo 2011 m. esu Reno apeliaciniame teisme prisiekusi vertėja raštu ir žodžiu, todėl teikiu teisminėms institucijoms, valdžios institucijoms, įmonėms ir privatiems asmenims sertifikuoto vertimo raštu ir žodžiu paslaugas, užtikrindama konfidencialumą bei turinio tikslumą.
+                </p>
+                <p class="intro-text intro-text-spaced">
+                    Mano specializacijos sritys apima teisę, administracinę veiklą ir mediciną. Reguliariai dirbu sudėtingose procesinėse situacijose: baudžiamosiose bylose, sulaikymo metu, apklausose, migracijos procedūrose, tvarkant administracinius formalumus, taip pat privačiame sektoriuje vykstančiuose profesiniuose ar komerciniuose susitarimuose, kuriuose reikalinga patikima ir operatyvi komunikacija.
+                </p>
+                <p class="intro-text intro-text-spaced">
+                    Esu UNETICA, nacionalinės apeliacinių teismų ekspertų vertėjų žodžiu ir raštu sąjungos, narė, todėl griežtai laikausi aukštų profesinės kompetencijos ir etikos standartų. Stengiuosi išlaikyti, praturtinti bei tobulinti profesinius įgūdžius, nuolat dalyvaujant tęstiniuose mokymuose, apimančiuose tiek įvairias specializuotas sritis, tiek vertimo raštu ir žodžiu technikas.
+                </p>
+                <p class="intro-text intro-text-spaced">
+                    Gyvenu La Chapelle-sur-Erdre, dirbu daugiausia Prancūzijoje, taip pat Lietuvoje, tiesioginiu arba nuotoliniu būdu.
+                </p>
+            </div>
+        </section>
+
+        <section class="about-section" id="tarifs">
+            <h2>Kainos</h2>
+            <div class="content-wrapper">
+                <p class="tarifs-intro">
+                    Kiekviena paslauga įkainojama individualiai. Kainos nustatomos atsižvelgiant į skirtingus kriterijus ir visada suderinama iš anksto.
+                </p>
+                
+                <div class="tarifs-section">
+                    <h3>
+                        Vertimo raštu paslaugų kriterijai:
+                    </h3>
+                    <ul class="tarifs-list">
+                        <li>Documento tipo ir teisinė turinio natura</li>
+                        <li>Teksto apimtis ir reikiamas formatavimas</li>
+                        <li>Pageidaujamas terminas, ypač skubos atveju</li>
+                        <li>Popierinė ir (arba) skaitmeninė versija, kopijų skaičius</li>
+                    </ul>
+                </div>
+                
+                <div class="tarifs-section">
+                    <h3>
+                        Vertimo žodžiu paslaugų kriterijai:
+                    </h3>
+                    <ul class="tarifs-list">
+                        <li>Pageidaujamas vertimo žodžiu būdas (sinchroninis, nuoseklus ar tarpininkavimo)</li>
+                        <li>Paslaugos trukmė ir išankstinis pasiruošimas</li>
+                        <li>Darbo vieta ir galimos kelionės išlaidos</li>
+                        <li>Specializuota sritis, reikalaujanti atitinkamos terminologinės kompetencijos</li>
+                    </ul>
+                </div>
+                
+                <p class="tarifs-note">
+                    Tikslas – kiekvienam klientui pasiūlyti sprendimą, kuris geriausiai atitiktų jų poreikius, laikantis profesinės etikos reikalavimų.
+                </p>
+            </div>
+        </section>
+
+        <section class="cta-section" id="contact">
+            <h2 class="cta-title">Norite pateikti užklausimą?</h2>
+            <p class="cta-text">Kiekvienai paslaugai pateikiamas pasiūlymas, pritaikytas jūsų konkretiems poreikiams</p>
+            <a href="mailto:dewitte.traduction@gmail.com" class="cta-button">Susisiekti</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>BDAR – Asmens duomenų apsauga</h3>
+            
             <p>
-                <span itemprop="name">Vertimas</span> raštu iš lietuvių į prancūzų / iš prancūzų į lietuvių kalbą. Visi atlikti vertimai yra patvirtinti teismui prisiekusio vertėjo. Toks dokumentas yra oficialiai pripažintas visų Prancūzijos Respublikos viešųjų tarnybų.
-               </p>
-               <p itemprop="description">Įvairių dokumentų (gimimo liudijimas, diplomai, techninės instrukcijos ir t.t.) vertimas atliekamas per 24 valendai.
-               </p>
-               <p>Teikiamos vertimo žodžiu paslaugos.</p>
+                Surinkta informacija naudojama tik jūsų užklausoms atsakyti ir paslaugų vykdymui. 
+            </p>
+            
+            <div class="footer-data">
+                <p>Jūsų duomenys: renkami tik tiek, kiek būtina, saugomi saugiai, niekada neparduodami ir neperduodami tretiesiems asmenims.</p>
+                <p>Jūsų teisės: teisė susipažinti, ištaisyti, ištrinti, apriboti, nesutikti ir perkelti duomenis.</p>
+                <p class="contact">Kontaktas: dewitte.traduction@gmail.com</p>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>Laima DEWITTE - Vertimas raštu ir žodžiu prancūzų / lietuvių kalbomis</p>
+                <p>Reno apeliaciniame teisme prisiekusi vertėja</p>
+            </div>
         </div>
+    </footer>
+    
 
-        <div class="row">
-
-            Kontaktai dėl papildomos informacijos :
-            <li><i class="fa fa-mobile"></i>&nbsp;<a href="tel:+33618921165">+33 6 18 92 11 65</a></li>
-            <li><i class="fa fa-envelope-o"></i>&nbsp;<a
-                    href="mailto:dewitte.traduction@gmail.com">dewitte.traduction@gmail.com</a></li>
-
-        </div>
-        <div class="footer">
-            <p><i class="fa fa-archive"></i>&nbsp;<a
-                    href="http://www.societe.com/societe/laima-dewitte-538002353.html">SIRET : 53800235300018</a> / <i
-                    class="fa fa-sitemap"></i>&nbsp;<a
-                    href="http://annuaire-traducteur-assermente.fr/fr/3,2,3873/fiche_traducteur_assermente_lituanien_DEWITTE_n%C3%A9e_KIAUNYTE_Laima_NANTES.html">Fiche
-                    traducteur</a></p>
-
-        </div>
-        <!-- /container -->
-    </div>
-
-
-
-
-</body>
-
-</html>
+</body></html>
